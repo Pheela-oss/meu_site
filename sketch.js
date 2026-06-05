@@ -1,6 +1,7 @@
 const loginButton = document.getElementById("loginButton")
 const nickname = document.getElementById("Nickname");
 const password = document.getElementById("Password");
+
 loginButton.addEventListener("click", function () {
     const nickname_storage = localStorage.getItem("username");
     const password_storage = localStorage.getItem("password");

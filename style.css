@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   user-select: none;
@@ -25,15 +26,16 @@ header {
   border-color: purple black rebeccapurple black;
   animation: neon 5s ease-in infinite;
 }
-@media (width < 900px) {
+@media (width < 1000px) {
   header {
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     background: black;
-    width: 90%;
-    height: 90vh;
+    width: 95%;
+    height: 600px;
+    max-height: 90vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -47,7 +49,7 @@ header h1 {
   font-family: bruno;
   margin-top: 90px;
 }
-@media (width < 750px) {
+@media (width < 1000px) {
   header h1 {
     font-size: 5cqh;
     text-align: center;
@@ -64,7 +66,7 @@ header img {
   width: 20%;
   object-fit: cover;
 }
-@media (width < 750px) {
+@media (width < 1000px) {
   header img {
     z-index: -1;
     top: 50%;
@@ -90,7 +92,7 @@ header div {
   color: white;
   overflow: hidden;
 }
-@media (width < 750px) {
+@media (width < 1000px) {
   header div {
     width: 100%;
     height: 60%;
@@ -108,7 +110,7 @@ header div #Nickname, header div #Password {
   padding: 5px;
   box-sizing: border-box;
 }
-@media (width < 750px) {
+@media (width < 1000px) {
   header div #Nickname, header div #Password {
     margin: 10px;
     margin-top: 0px;
@@ -122,7 +124,7 @@ header div #Nickname:focus, header div #Password:focus {
   outline: 1px solid white;
   background: rgb(120, 120, 120);
 }
-@media (width < 750px) {
+@media (width < 1000px) {
   header div h3 {
     margin-left: 20px;
   }
@@ -150,7 +152,7 @@ header div button:focus {
   background: rgb(180, 0, 180);
   outline: 1px solid purple;
 }
-@media (width < 750px) {
+@media (width < 1000px) {
   header div button {
     width: 80%;
     height: 60px;
@@ -233,5 +235,6 @@ header div button:focus {
     box-shadow: 0px 10px 10px purple;
   }
 }
+/* Se você ainda estiver vivo, forte e estudando, quero que saiba que, por mais que o futuro seja indeciso, ele é tudo o que você tem agora, por favor, me realize. Ass: Eu em 2026 */
 
 /*# sourceMappingURL=style.css.map */
