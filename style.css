@@ -25,7 +25,7 @@ header {
   border-color: purple black rebeccapurple black;
   animation: neon 5s ease-in infinite;
 }
-@media (width < 400px) {
+@media (width < 600px) {
   header {
     position: fixed;
     left: 50%;
@@ -47,7 +47,7 @@ header h1 {
   color: white;
   font-family: bruno;
 }
-@media (width < 400px) {
+@media (width < 600px) {
   header h1 {
     font-size: 5cqh;
     text-align: center;
@@ -64,17 +64,18 @@ header img {
   width: 20%;
   object-fit: cover;
 }
-@media (width < 400px) {
+@media (width < 600px) {
   header img {
     z-index: -1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    opacity: 0.25;
+    height: 100%;
+    opacity: 0.1;
   }
 }
-header div {
+header form {
   position: absolute;
   width: 60%;
   height: 80%;
@@ -90,8 +91,8 @@ header div {
   color: white;
   overflow: hidden;
 }
-@media (width < 400px) {
-  header div {
+@media (width < 600px) {
+  header form {
     width: 100%;
     height: 60%;
     left: 0;
@@ -100,7 +101,7 @@ header div {
     margin: 0;
   }
 }
-header div #Nickname, header div #Password {
+header form #Nickname, header form #Password {
   border: none;
   background: rgb(100, 100, 100);
   color: black;
@@ -108,67 +109,79 @@ header div #Nickname, header div #Password {
   padding: 5px;
   box-sizing: border-box;
 }
-@media (width < 400px) {
-  header div #Nickname, header div #Password {
+@media (width < 600px) {
+  header form #Nickname, header form #Password {
     margin: 10px;
-    margin-top: 0px;
+    margin-top: -10px;
     height: 30px;
     font-size: 20px;
   }
 }
-header div #Nickname:hover, header div #Password:hover {
+header form #Nickname:hover, header form #Password:hover {
   background: rgb(90, 90, 90);
 }
-header div #Nickname:focus, header div #Password:focus {
+header form #Nickname:focus, header form #Password:focus {
   box-shadow: 1px 0px 10px white;
   outline: 1px solid white;
   background: rgb(120, 120, 120);
 }
-@media (width < 400px) {
-  header div h3 {
+@media (width < 600px) {
+  header form h3 {
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
+    font-family: dyna;
   }
 }
-header div #Nickname {
+header form #Nickname {
   margin-bottom: 30px;
 }
-header div button { /* login Button */
-  width: 70px;
-  height: 40px;
+header .loginAcess {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 20px;
-  border: none;
+  gap: 10px;
+}
+header .loginAcess button { /* login Button */
+  width: 70px;
+  height: 40px;
+  border: 0;
   border-radius: 20px;
   background: purple;
   font-family: caveat;
   font-size: 20px;
 }
-header div button:hover {
+header .loginAcess button:hover {
   background: rgb(110, 0, 110);
 }
-header div button:focus {
+header .loginAcess button:focus {
   background: rgb(180, 0, 180);
   outline: 1px solid purple;
 }
-@media (width < 400px) {
-  header div button {
-    width: 80%;
+@media (width < 600px) {
+  header .loginAcess button {
+    border-radius: 0;
+    width: 110px;
+    margin: 0;
+  }
+}
+@media (width < 600px) {
+  header .loginAcess {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 50px;
     left: 50%;
     transform: translate(-50%);
     font-size: 40px;
     margin: 0;
-    bottom: 40px;
+    bottom: 50px;
+    gap: 30px;
   }
-}
-header div {
-  /* linha 137, "button" */
-}
-header {
-  /* linha 77, "div" */
 }
 header #excluirConta {
   position: absolute;
@@ -189,12 +202,12 @@ header #excluirConta:focus {
   background: red;
   color: white;
 }
-@media (width < 400px) {
+@media (width < 600px) {
   header #excluirConta {
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
-    bottom: 5px;
+    bottom: 10px;
   }
 }
 
@@ -217,7 +230,7 @@ header #excluirConta:focus {
   bottom: 0;
   height: 120px;
 }
-@media (width < 400px) {
+@media (width < 600px) {
   #kuromi {
     top: 0;
     left: 50%;
@@ -234,6 +247,7 @@ header #excluirConta:focus {
   background: white;
   z-index: 10;
   width: 30%;
+  min-width: 500px;
   height: 70px;
   margin: 20px;
   align-items: center;
@@ -245,7 +259,7 @@ header #excluirConta:focus {
   font-size: 2cqh;
   box-sizing: border-box;
 }
-@media (width < 400px) {
+@media (width < 600px) {
   .loginErrorMessages {
     font-size: 1.3cqh;
     height: 80px;
@@ -264,7 +278,7 @@ header #excluirConta:focus {
   width: auto;
   aspect-ratio: 1/1;
 }
-@media (width < 400px) {
+@media (width < 600px) {
   .loginErrorMessages img {
     height: 90%;
   }

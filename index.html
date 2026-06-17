@@ -14,16 +14,22 @@
     <body>
         <img src="assets/content/media/background.jpg" alt="background" id="background">
         <img src="assets/content/media/Kuromi_Laughing.gif" alt="kuromi" id="kuromi">
+
         <header>
             <h1>WELCOME <br> BACK </h1>
 
-            <div>
+            <form>
                 <h3>Username</h3>
-                <textarea id="Nickname"></textarea>
+                <input type="email" id="Nickname" placeholder="Nickname">
                 <h3>Password</h3>
-                <textarea id="Password"></textarea>
-                <button id="loginButton">Login</button>
+                <input type="password" id="Password" placeholder="Password">
+            </form>
+
+            <div class="loginAcess">  
+                    <button id="Entrar">Sign In</button>
+                    <button id="Cadastrar">Sign Up</button>
             </div>
+
             <img src="assets/content/media/Kuromi.jpeg">
 
             <button id="excluirConta">Excluir conta</button>
@@ -36,7 +42,11 @@
             <img src="assets/content/media/Bothered Kuromi.jpg" alt="emotion profile" id="emotion profile">
             <h1 id="h1fromLEM">Hm... não achei seu perfil aqui</h1>
         </label>
-        <script src="sketch.js"></script>
+
+
+
+        <!----->
+        <script type="module" src="sketch.js"></script>
     </body>
      
 </html>
